@@ -1,0 +1,456 @@
+/* ==================================================
+   QUESTION 6 - FLEXBOX LANDING PAGE
+   ================================================== */
+
+
+/* =========================
+   Basic Reset
+   ========================= */
+
+.flexbox-page {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   Hero Section
+   ========================= */
+
+.flexbox-hero {
+    position: relative;
+
+    min-height: 390px;
+
+    background-color: #4057e8;
+
+    color: white;
+
+    overflow: hidden;
+
+    padding-bottom: 70px;
+}
+
+
+/* Decorative Circle 1 */
+
+.flexbox-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border: 70px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 50%;
+
+    left: -170px;
+    top: 120px;
+}
+
+
+/* Decorative Circle 2 */
+
+.flexbox-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border: 50px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 50%;
+
+    right: -130px;
+    top: -160px;
+}
+
+
+/* =========================
+   Navigation
+   FLEXBOX
+   ========================= */
+
+.flexbox-nav {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 18px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 1rem;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    flex: 1;
+}
+
+
+/* Nav Anchor */
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.8);
+
+    text-decoration: none;
+
+    font-size: 0.55rem;
+
+    font-weight: bold;
+}
+
+
+/* Nav Hover */
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* Buy Button */
+
+.buy-button {
+    background-color: white;
+
+    color: #4057e8;
+
+    text-decoration: none;
+
+    padding: 8px 15px;
+
+    font-size: 0.65rem;
+
+    border-radius: 3px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   Hero Content
+   ========================= */
+
+.hero-content {
+    width: 70%;
+
+    max-width: 700px;
+
+    margin: 55px auto 0;
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Hero Heading */
+
+.hero-content h1 {
+    font-size: 2rem;
+
+    line-height: 1.2;
+
+    margin: 0 0 12px;
+
+    font-weight: bold;
+}
+
+
+/* Hero Paragraph */
+
+.hero-content p {
+    width: 75%;
+
+    margin: 0 auto 20px;
+
+    font-size: 0.7rem;
+
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* =========================
+   Hero Buttons
+   FLEXBOX
+   ========================= */
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* Both Buttons */
+
+.documentation-button,
+.started-button {
+    padding: 8px 14px;
+
+    border-radius: 3px;
+
+    font-size: 0.65rem;
+
+    text-decoration: none;
+}
+
+
+/* Documentation */
+
+.documentation-button {
+    background-color: white;
+
+    color: #4057e8;
+}
+
+
+/* Get Started */
+
+.started-button {
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+
+/* =========================
+   Features Section
+   FLEXBOX
+   ========================= */
+
+.features {
+    width: 70%;
+
+    max-width: 900px;
+
+    margin: -30px auto 0;
+
+    position: relative;
+
+    z-index: 5;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 20px;
+}
+
+
+/* Feature Card */
+
+.feature-card {
+    width: 33.33%;
+
+    min-height: 130px;
+
+    padding: 18px;
+
+    background-color: white;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 3px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Feature Icon */
+
+.feature-icon {
+    width: 35px;
+    height: 35px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f0f3ff;
+
+    color: #4057e8;
+
+    border-radius: 3px;
+
+    font-size: 1rem;
+}
+
+
+/* Feature Heading */
+
+.feature-card h3 {
+    color: #333333;
+
+    font-size: 0.75rem;
+
+    margin: 5px 0 8px;
+}
+
+
+/* Feature Paragraph */
+
+.feature-card p {
+    color: #999999;
+
+    font-size: 0.6rem;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* =========================
+   Explore Features
+   ========================= */
+
+.explore-link {
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+
+.explore-link a {
+    color: #4057e8;
+
+    text-decoration: none;
+
+    font-size: 0.65rem;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   Quickstart
+   ========================= */
+
+.quickstart {
+    text-align: center;
+
+    margin-top: 35px;
+}
+
+
+.quickstart a {
+    color: #4057e8;
+
+    text-decoration: none;
+
+    font-size: 0.65rem;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   Hover Effects
+   ========================= */
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.buy-button:hover {
+    background-color: #eef1ff;
+}
+
+
+.documentation-button:hover {
+    opacity: 0.9;
+}
+
+
+.started-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .flexbox-nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        order: 3;
+
+        width: 100%;
+
+        flex-basis: 100%;
+
+        gap: 15px;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .features {
+        width: 90%;
+
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}

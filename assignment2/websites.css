@@ -1,0 +1,119 @@
+
+body {
+    background-color: #eaf4f4;
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+
+h1 {
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #24527a;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.website-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+}
+
+
+
+
+.website-container a {
+    display: inline-block;
+    color: #24527a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 10px 20px;
+    margin: 5px;
+
+    border: 2px solid cadetblue;
+    border-radius: 8px;
+}
+
+
+
+
+.website-container a:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+
+
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+
+    border: 2px solid #24527a;
+    border-radius: 12px;
+}
+
+
+
+.image-container img {
+    width: 250px;
+    height: 150px;
+
+    object-fit: cover;
+
+    padding: 8px;
+    border: 3px solid cadetblue;
+    margin: 5px;
+
+    border-radius: 15px;
+}
+
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+ .button {
+            display: inline-block;
+            background-color: cadetblue;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background-color: #24527a;
+        }

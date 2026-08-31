@@ -1,0 +1,413 @@
+/* ==================================================
+   QUESTION 5 - PERSONAL PROFILE PAGE
+   ================================================== */
+
+
+/* =========================
+   Basic Page Styling
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #eef5ff;
+    color: #333333;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Header
+   ID Selector
+   ========================= */
+
+#home {
+    background-color: cadetblue;
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+    min-height: 30vh;
+
+    position: relative;
+}
+
+
+/* Header Name */
+
+#home h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+/* Header Subtitle */
+
+#home p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   Navigation
+   ========================= */
+
+nav {
+    background-color: #24527a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+}
+
+
+/* Navigation Links */
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+
+/* Navigation Hover */
+
+nav a:hover {
+    background-color: cadetblue;
+}
+
+
+/* =========================
+   Main
+   ========================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 30px auto;
+}
+
+
+/* =========================
+   Section Styling
+   ========================= */
+
+section,
+article,
+aside {
+    background-color: white;
+
+    margin-bottom: 30px;
+    padding: 30px;
+
+    border: 1px solid #c7d8e5;
+    border-radius: 12px;
+}
+
+
+/* Section Headings */
+
+section h2,
+article h2,
+aside h2 {
+    color: #24527a;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-top: 0;
+}
+
+
+/* =========================
+   About Section
+   FLEXBOX
+   ========================= */
+
+.about-section {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+
+    flex-direction: row;
+}
+
+
+/* About Image */
+
+.about-image {
+    width: 35%;
+    text-align: center;
+}
+
+
+/* Profile Image */
+
+.about-image img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+    border: 5px solid cadetblue;
+
+    padding: 5px;
+}
+
+
+/* About Content */
+
+.about-content {
+    width: 65%;
+}
+
+
+/* About Paragraph */
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   Button
+   Class Selector
+   ========================= */
+
+.profile-button {
+    display: inline-block;
+
+    background-color: #24527a;
+    color: white;
+
+    padding: 12px 22px;
+    margin-top: 10px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* Button Hover */
+
+.profile-button:hover {
+    background-color: cadetblue;
+}
+
+
+/* =========================
+   Skills Section
+   FLEXBOX
+   ========================= */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+/* Skill Cards */
+
+.skill-card {
+    width: 30%;
+
+    padding: 20px;
+
+    background-color: #f0f8ff;
+
+    border: 2px solid #b7c9d6;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+/* Skill Heading */
+
+.skill-card h3 {
+    color: #24527a;
+    font-size: 1.2rem;
+}
+
+
+/* Skill Paragraph */
+
+.skill-card p {
+    font-size: 0.95rem;
+}
+
+
+/* Skill Card Hover */
+
+.skill-card:hover {
+    border-color: cadetblue;
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   Journey Article
+   ========================= */
+
+.journey-section {
+    background-color: #ffffff;
+}
+
+
+.journey-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   Aside
+   ========================= */
+
+.side-information {
+    background-color: #e4f1f2;
+
+    border-left: 6px solid cadetblue;
+}
+
+
+.side-information h3 {
+    color: #24527a;
+    font-size: 1.2rem;
+}
+
+
+.side-information ul {
+    padding-left: 25px;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    background-color: #24527a;
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 40px;
+}
+
+
+footer h3 {
+    font-size: 1.4rem;
+    margin: 5px;
+}
+
+
+footer p {
+    font-size: 0.95rem;
+}
+
+
+footer a {
+    color: white;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-bottom: 2px solid white;
+}
+
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .skill-card {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 0;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+}

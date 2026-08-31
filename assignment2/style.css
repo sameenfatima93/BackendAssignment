@@ -1,0 +1,47 @@
+/*_______ question 2 stylings_________ */
+
+#marks-table {
+    width: 70%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+
+caption {
+    color: #24527a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+th {
+    background-color: #24527a;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #183b56;
+}
+
+
+td {
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #b7c9d6;
+    color: #333333;
+}
+
+
+.total-column {
+    background-color: #d8f3dc;
+    color: #1b5e20;
+    font-weight: bold;
+}
+
+
+#marks-table tr:hover {
+    background-color: #eef7ff;
+}

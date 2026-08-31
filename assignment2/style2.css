@@ -1,0 +1,225 @@
+/* ==================================================
+   QUESTION 4 - STUDENT REGISTRATION FORM
+   ================================================== */
+
+
+/* Page Styling */
+
+body {
+    background-color: #eaf4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+
+/* Main Form Container
+   Box Model + Positioning */
+
+.registration-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: white;
+
+    border: 2px solid cadetblue;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Form Heading */
+
+.registration-container h1 {
+    text-align: center;
+    color: #24527a;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #24527a;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* Text Inputs, Email, Password and Date */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+
+    display: block;
+
+    width: 100%;
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #b7c9d6;
+    border-radius: 6px;
+
+    background-color: #f7fbff;
+
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Input Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border: 2px solid cadetblue;
+}
+
+
+/* Gender Options
+   FLEXBOX */
+
+.gender-options {
+    display: flex;
+
+    align-items: center;
+    gap: 25px;
+
+    padding: 10px;
+
+    background-color: #f0f8ff;
+    border-radius: 6px;
+}
+
+
+/* Gender Labels */
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #333333;
+    font-weight: normal;
+}
+
+
+/* Programming Languages
+   FLEXBOX */
+
+.language-options {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 12px;
+
+    background-color: #f0f8ff;
+    border-radius: 6px;
+}
+
+
+/* Language Labels */
+
+.language-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #333333;
+    font-weight: normal;
+}
+
+
+/* Radio Buttons and Checkboxes */
+
+.gender-options input,
+.language-options input {
+    width: auto;
+    margin: 0;
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* Buttons Container
+   FLEXBOX */
+
+.form-buttons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+/* Submit and Reset Buttons */
+
+.form-buttons button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Submit Button */
+
+.form-buttons button[type="submit"] {
+    background-color: #24527a;
+    color: white;
+}
+
+
+/* Reset Button */
+
+.form-buttons button[type="reset"] {
+    background-color: #cad2d3;
+    color: #333333;
+}
+
+
+/* Button Hover */
+
+.form-buttons button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
