@@ -13,3 +13,17 @@ const diffrence = subtraction(33-5);
 const fruites = ["apple", "banana", "cherry", "date"];
 console.log(fruites[1]);
 fruites[1] = "blueberry"; 
+
+fruites.push("elderberry");
+console.log(fruites);
+
+fruites.pop();
+console.log(fruites);
+
+fruites.shift();
+console.log(fruites);
+
+fruites.unshift("apricot");
+console.log(fruites);
+
+
