@@ -1,26 +1,49 @@
-// Create two arrays
-let fruits = ["Apple", "Banana", "Mango", "Orange"];
-let vegetables = ["Potato", "Tomato", "Carrot", "Onion"];
+let marks = [78, 45, 92, 66, 88, 54, 91, 73];
 
-// concat()
-let combined = fruits.concat(vegetables);
-console.log("Combined array:", combined);
+// Create second array
+let secondMarks = [81, 69, 95, 60];
 
-// slice()
-let selectedFruits = fruits.slice(1, 3);
-console.log("Selected fruits:", selectedFruits);
+// Combine both groups
+let combinedMarks = marks.concat(secondMarks);
 
-// splice() - remove an element
-fruits.splice(1, 1);
-console.log("After removing with splice:", fruits);
+console.log("Combined marks:", combinedMarks);
 
-// splice() - add an element
-fruits.splice(1, 0, "Banana");
-console.log("After adding with splice:", fruits);
 
-// delete - delete one element
-delete fruits[2];
+// Create a smaller list from selected portion
+let selectedMarks = combinedMarks.slice(2, 7);
 
-console.log("After delete:", fruits);
-console.log("Array length after delete:", fruits.length);
-console.log("Deleted position:", fruits[2]);
+console.log("Selected marks:", selectedMarks);
+
+
+// Change one mark in the middle
+combinedMarks.splice(5, 1, 70);
+
+console.log("After changing a mark:", combinedMarks);
+
+
+// Total number of marks
+console.log("Total number of marks:", combinedMarks.length);
+
+
+// Arrange from lowest to highest
+let sortedMarks = [...combinedMarks];
+
+sortedMarks.sort(function (a, b) {
+    return a - b;
+});
+
+console.log("Lowest to highest:", sortedMarks);
+
+
+// Reverse the resulting list
+sortedMarks.reverse();
+
+console.log("Reversed marks:", sortedMarks);
+
+
+// Arrow function
+let displayFinalResult = (marksArray) => {
+    console.log("Final result:", marksArray);
+};
+
+displayFinalResult(sortedMarks);

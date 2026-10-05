@@ -1,15 +1,41 @@
-// Create an array of fruits
-let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+let students = ['Ali', 'Sara', 'Ahmed', 'Ayesha', 'Hamza', 'Sara', 'Bilal'];
 
-// 1. Display number of elements
-console.log("Number of fruits:", fruits.length);
+// Check whether Ayesha is present
+let isAyeshaPresent = students.includes('Ayesha');
+console.log("Is Ayesha present?", isAyeshaPresent);
 
-// 2. Convert array into a string
-console.log("Array as string:", fruits.toString());
+// Find the position of the first Sara
+let firstSaraPosition = students.indexOf('Sara');
+console.log("First Sara position:", firstSaraPosition);
 
-// 3. Access elements using at()
-console.log("First fruit:", fruits.at(0));
-console.log("Third fruit:", fruits.at(2));
+// Find the position of the last Sara
+let lastSaraPosition = students.lastIndexOf('Sara');
+console.log("Last Sara position:", lastSaraPosition);
 
-// 4. Display elements separated by a symbol
-console.log("Fruits:", fruits.join(" - "));
+// Find the first student whose name starts with A
+let firstAStudent = students.find(function (student) {
+    return student.startsWith('A');
+});
+
+console.log("First student whose name starts with A:", firstAStudent);
+
+// Find the position of the first student whose name starts with A
+let firstAPosition = students.findIndex(function (student) {
+    return student.startsWith('A');
+});
+
+console.log("Position of first A student:", firstAPosition);
+
+// Find the last student whose name starts with A
+let lastAStudent = students.findLast(function (student) {
+    return student.startsWith('A');
+});
+
+console.log("Last student whose name starts with A:", lastAStudent);
+
+// Find the position of the last student whose name starts with A
+let lastAPosition = students.findLastIndex(function (student) {
+    return student.startsWith('A');
+});
+
+console.log("Position of last A student:", lastAPosition);

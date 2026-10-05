@@ -1,25 +1,42 @@
-// Create an array of students
-let students = ["Ali", "Ahmed", "Sara", "Ayesha", "Hamza"];
+let prices = [1200, 450, 3000, 750, 1500, 250];
 
-console.log("Original array:", students);
+// Lowest to highest
+let lowToHigh = [...prices];
 
-// 1. Add a student at the end
-students.push("Fatima");
-console.log("After push:", students);
+lowToHigh.sort(function (a, b) {
+    return a - b;
+});
 
-// 2. Remove the last student
-let removedLast = students.pop();
-console.log("Removed student:", removedLast);
-console.log("After pop:", students);
+console.log("Lowest to highest:", lowToHigh);
 
-// 3. Add a student at the beginning
-students.unshift("Zain");
-console.log("After unshift:", students);
 
-// 4. Remove the first student
-let removedFirst = students.shift();
-console.log("Removed student:", removedFirst);
-console.log("After shift:", students);
+// Highest to lowest
+let highToLow = [...prices];
 
-// 5. Display final number of students
-console.log("Final number of students:", students.length);
+highToLow.sort(function (a, b) {
+    return b - a;
+});
+
+console.log("Highest to lowest:", highToLow);
+
+
+// Original list
+console.log("Original prices:", prices);
+
+
+// Reversed version
+let reversedPrices = [...prices];
+
+reversedPrices.reverse();
+
+console.log("Reversed prices:", reversedPrices);
+
+
+// Random ordering
+let randomPrices = [...prices];
+
+randomPrices.sort(function () {
+    return Math.random() - 0.5;
+});
+
+console.log("Random ordering:", randomPrices);
